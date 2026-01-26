@@ -1,0 +1,29 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "chore(deps)"
+    allow:
+      - dependency-type: "direct"
+      - dependency-type: "indirect"
+    ignore: []
+    rebase-strategy: "auto"
+    pull-request-branch-name:
+      separator: "-"
+    reviewers: []
+    assignees: []
+    labels:
+      - "dependencies"
+      - "security"
+    versioning-strategy: increase
+    groups:
+      lodash-security:
+        patterns:
+          - "lodash"
+        update-types:
+          - "patch"
+          - "minor"
