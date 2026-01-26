@@ -2,12 +2,9 @@
   "name": "auto-fixer-security-vuln",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "start": "node index.js",
-    "security-check": "npm audit --audit-level=high",
-    "ci": "npm run security-check"
-  },
+  "main": "index.js",
+  "license": "MIT",
   "dependencies": {
-    "lodash": "4.17.20"
+    "lodash": "^4.17.21"
   }
 }
