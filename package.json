@@ -8,6 +8,6 @@
     "ci": "npm run security-check"
   },
   "dependencies": {
-    "lodash": "4.17.20"
+    "lodash": "4.17.23"
   }
 }
